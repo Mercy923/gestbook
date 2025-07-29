@@ -1,0 +1,29 @@
+:root {
+  --color-text: #333333;
+  --color-background: rgba(255, 255, 255, 0.85);
+  --color-border: #cccccc;
+  --color-primary: #2b7cff;
+  --color-reactions-bg: #e8f0fe;
+  --color-input-background: #ffffff;
+}
+
+.giscus {
+  position: relative;
+  background-image: url("https://i.pinimg.com/1200x/01/ad/f4/01adf49e075f1cead9b54fb82fb2c077.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.giscus::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.7);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.giscus > iframe {
+  position: relative;
+  z-index: 1;
+}
